@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REUSCH</title>
+   <link rel="stylesheet" href="iconos/css/fontello.css">
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        #thumbs { padding-top: 10px; overflow: hidden; }
+#thumbs img, #largeImage {
+  
+   padding: 4px;
+   background-color: white;
+   cursor: pointer;
+}
+#thumbs img {
+   float: left;
+   margin-right: 6px;
+}
+#description {
+   background: black;
+   color: white;
+   position: absolute;
+   bottom: 0;
+   padding: 10px 20px;
+   width: 196px;
+   margin: 5px;
+}
+#panel { 
+    position: relative; 
+}
+    </style>
+<header>
+        <a href="index.html"> <img src="images/LOGO REUSCH BLANCO.png" class="logo"alt=""></a>
+        <input type="checkbox" id="check">
+         <label for="check" class="icon-menu"></label>
+         <nav class="menu">
+             <div style="border-bottom-color: white">
+                    <ul class="ulsociales">
+                        <li class="social"><a href=""><img style src="images/twitter.png" alt=""></a></li>
+                        <li class="social"><a href=""><img src="images/fb.png" alt=""></a></li>
+                        <li class="social"><a href=""><img src="images/YT.png" alt=""></a></li>
+                    <li class="social"><a href=""><img src="images/instagram.png" alt=""></a></li>
+                        </ul>  
+             </div ><br></br>
+          <ul>
+             <li><a href="index.html">INICIO</a></li>
+             <li><a href="">PRODUCTOS</a></li>
+             <li><a href="#">PALMAS Y TECNOLOGIAS</a></li>
+             <li><a href=arqueros.html">ARQUEROS</a></li>
+             <li><a href="#">NOVEDADES</a></li>
+             <li><a href="contacto.html">CONTACTO</a></li>
+
+         </ul>
+       </nav>
+</header>
+<div id="main-container" >
+        <div id="container-out" style="background: url('images/fondo.png') top-center">
+            <div id="container-bg"  style="background: url('images/fondo.png') repeat!important;">
+                <div id="shadow">
+                    <div id="container">
+                     <div id="moduletable">
+                         <!--add banner-->
+                         <div id="banner"></div>
+                         <div id="main-content-contact">
+                             <div id="content-inner-contact" style="background: url('images/FONDO2.png')" >
+                                <div >
+                                        <div id="gallery">
+                                                <div id="panel">
+                                                  <img id="largeImage" src="images/arquero2.png" />
+                                                  <div id="description">First image description</div>
+                                                </div>
+                                                <div id="thumbs">
+                                                       <img src="images/arquero1.png" alt="Franco Armani " />
+                                                      <img src="images/arquero2.png" alt="Manuel Guzman" />
+                                                      <img src="images/arquero3.png" alt="Marcelo Barovero" />
+                                                      <img src="images/arquero2.png" alt="Franco Armani" />
+                                                      
+                                                </div>
+                                              </div>          
+                              </div>    
+                             </div>
+                         </div>
+                     </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+</div>
+<div class="vst-bottom">
+    <div id="bottom-out-footer"> 
+        <div class="bottom-out-footer-inner">
+            <div id="bottom-footer">
+                    <div id="flashnews">
+                           
+                            <div class="flashnewstext">
+                                <p id="flashnew_holder" style="display: inline;"><a href=""><img src="images/copirigth.png" style="margin-left: 50%; height: auto"> </a></p>
+                            </div>
+                           
+                            </div>  
+                            <div id="footer">
+                          </div>
+            </div>
+
+        </div>
+    
+    </div>
+</div>
+    <script>
+    $('#thumbs img').click(function(){
+    $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+    $('#description').html($(this).attr('alt'));
+});</script>
+</body>
+</html>
